@@ -1,24 +1,23 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * To change this license
+ * and open the template in the editor.
  */
-package mx.edu.itsur.pokebatalla;
-
-import mx.edu.itsur.pokebatalla.model.Bullbasaur;
-import mx.edu.itsur.pokebatalla.model.Pikachu;
-import mx.edu.itsur.pokebatalla.model.Charmander;
+package main;
+import main.Bullbasaur;
+import main.Pikachu;
+import main.Charmander;
+import main.Snorlax;
+import main.Magikarp;
+import main.Diglett;
 
 /**
  *
- * @author FJML1983
+ * @author ARTEM
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+      // TODO code application logic here
         System.out.println("Hello PokeBatalla!");
         
         Pikachu pikachuSalvaje = new Pikachu();
@@ -29,9 +28,39 @@ public class Main {
         Pikachu miPikachu = pikachuSalvaje;
         
         miPikachu.atacar(charmanderSalvaje);
-        
         miPikachu.atacar(charmanderSalvaje, "ATACKTRUENO");
         
+        System.out.print("----------------------------------------------");
+       
+       Snorlax SnorlaxSalvaje = new Snorlax();
+       Magikarp MagikarpSalvaje = new Magikarp();
+       Diglett DiglettSalvaje = new Diglett();
+       
+        SnorlaxSalvaje.setNombre("Snorlax");        
+        Snorlax Snorlax = SnorlaxSalvaje;
+        
+        Snorlax.atacar(charmanderSalvaje);
+        Snorlax.atacar(charmanderSalvaje, "lengüetazo");
+        System.out.print("----------------------------------------------");
+       
+        MagikarpSalvaje.setNombre("Magikarp ");        
+        Magikarp  Magikarp  = MagikarpSalvaje;
+        
+        Magikarp.atacar(charmanderSalvaje);
+        Magikarp.atacar(charmanderSalvaje, "Salpicadura");
+        System.out.print("----------------------------------------------");
+        
+        DiglettSalvaje.setNombre("Diglett");        
+        Diglett Diglett = DiglettSalvaje;
+        
+        Diglett.atacar(charmanderSalvaje);
+        Diglett.atacar(charmanderSalvaje, "bofetón lodo");
+        System.out.print("----------------------------------------------");
     }
+      
+       
+       
     
+      
+       
 }
